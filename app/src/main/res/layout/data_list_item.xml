@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card:cardCornerRadius="10dp"
+    card:cardElevation="5dp"
+    card:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/consiraint_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/item_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:text=""
+            card:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_gender_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:text=""
+            card:layout_constraintTop_toBottomOf="@+id/item_name_tv"/>
+
+        <TextView
+            android:id="@+id/item_phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:text=""
+            card:layout_constraintTop_toBottomOf="@+id/item_gender_tv"/>
+
+        <TextView
+            android:id="@+id/item_mail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:text=""
+            card:layout_constraintTop_toBottomOf="@+id/item_phone_tv"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
